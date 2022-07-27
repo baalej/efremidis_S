@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* header */
+.header-top {
+    position: fixed;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 16px;
+    z-index: 99;
+}
+
+header h1 {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.header-language {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 16px;
+}
+
+.current-page {
+    text-decoration: underline;
+}
+
+/* front-page */
+.announcement {
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+
+#announcement-first {
+    background-image: url('../img/Efremidis_OhSufan_install-02-4096x2731 1.png');
+}
+
+#announcement-second {
+    background-image: url('../img/Potsdam-exhibition-2-4096x2730 1.png');
+}
+
+.announcement-title {
+    text-align: center;
+    padding-top: 16px;
+}
+
+.announcement-address {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 16px;
+}
+
+/* program */
+.program-state {
+    /* padding-top: 16px; */
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 16px;
+}
+
+.program-item {
+    display: flex;
+    /* min-height: 50vh; */
+    margin: 24px 16px;
+}
+
+.program-item-nomargin {
+    display: flex;
+    margin: 24px 0 16px 16px;
+}
+
+.program-item-nomargin img{
+    float: right;
+}
+
+
+#program-item-first {
+    margin-top: 32px;
+}
+
+.program-item-title {
+    padding-right: 48px;
+}
+
+.program-item-title,
+.program-item-image {
+    width: 50%;
+}
+
+.project-image-full {
+    width: 100%;
+    margin: 24px 0;
+    display: block;
+}
+
+.program-item-image img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* information */
+.program-item-title-secondary {
+    width: 50%;
+    text-align: center;
+}
