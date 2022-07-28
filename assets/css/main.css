@@ -1,10 +1,22 @@
+@font-face {
+    font-family: 'Nimbus';
+    font-style: normal;
+    src: url('../fonts/NimbusSanL-Reg.otf');
+}
+
+@font-face {
+    font-family: 'Nimbus';
+    font-style: italic;
+    src: url('../fonts/NimbusSanL-RegIta.otf');
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nimbus', Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -34,6 +46,7 @@ header h1 {
     bottom: 0;
     right: 0;
     padding: 16px;
+    z-index: 2;
 }
 
 .current-page {
@@ -45,7 +58,7 @@ header h1 {
     background-size: cover;
     height: 100vh;
     position: relative;
-    z-index: -1;
+    cursor: e-resize;
 }
 
 #announcement-first {
